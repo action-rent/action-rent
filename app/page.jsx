@@ -1,42 +1,18 @@
-import Head from "next/head";
+export const metadata = {
+  title: "Прокат сапбордов и палаток в СПб | Аренда снаряжения — Action Rent",
+  description:
+    "Аренда сапбордов, палаток и туристического снаряжения в Санкт-Петербурге. Прокат SUP-досок и палаток без залога. Все для активного отдыха — арендуй легко с Action Rent.",
+};
+
 import { FaTelegram } from "react-icons/fa";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import "../app/App.css"; 
 import Link from "next/link";
+import "../app/App.css";
 
 export default function Home() {
   return (
     <div className="landing-container">
-      <Head>
-        <title>
-          Прокат SUP-досок, аренда сапбордов, аренда сапбордов спб, аренда палаток, аренда туристических рюкзаков, прокат сапбордов, прокат сап досок спб , прокат палаток спб и туристического инвентаря в СПб | Action Rent
-        </title>
-        <meta
-          name="description"
-          content="Аренда сапбордов и снаряжения в Санкт-Петербурге. Удобный прокат SUP-досок, палаток, туристического инвентаря без залога — Action Rent."
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `
-            {
-              "@context": "https://schema.org",
-              "@type": "SportsActivityLocation",
-              "name": "Action Rent",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Санкт-Петербург",
-                "streetAddress": "проспект Энгельса, 126к1"
-              },
-              "telephone": "+7 (950) 222-65-90",
-              "url": "https://action-rent.ru"
-            }
-          `,
-          }}
-        />
-      </Head>
-
       <div className="landing-content">
         <Header />
 
@@ -59,7 +35,7 @@ export default function Home() {
                 <button className="btn primary">Прайс</button>
               </Link>
               <a className="btn secondary" href="https://t.me/actionrent78" target="_blank" rel="noopener noreferrer">
-                 <span>Написать</span> <FaTelegram/>
+                <span>Написать</span> <FaTelegram />
               </a>
             </div>
           </div>

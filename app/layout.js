@@ -1,25 +1,55 @@
 export const metadata = {
-  title: "Action Rent",
-  description: "Аренда сапбордов, палаток и туристического инвентаря спб",
+  title: "Аренда сапбордов и палаток в СПб | Прокат туристического снаряжения — Action Rent",
+  description:
+    "Аренда и прокат сапбордов, палаток и туристического снаряжения в Санкт-Петербурге (СПб). У нас — аренда SUP-досок и палаток без залога. Прокат туристического инвентаря в СПб для отдыха и путешествий по доступным ценам.",
+  metadataBase: new URL("https://action-rent.ru"),
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Action Rent | Аренда сапборда и палатки в СПб",
+    description:
+      "Прокат сапбордов, палаток и туристического снаряжения в Санкт-Петербурге. Без залога. Всё для активного отдыха — аренда SUP-досок и туристических рюкзаков в СПб.",
+    url: "https://action-rent.ru",
+    siteName: "Action Rent",
+    locale: "ru_RU",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="ru">
       <head>
-        {/* Viewport: для правильной работы на мобильных, особенно с вырезами */}
+        {/* Viewport: для мобильных устройств */}
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-        
-        {/* Apple & Android UX */}
+
+        {/* UX улучшения */}
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="theme-color" content="#000000" />
-      </head>
 
-      <body>
-        {children}
-      </body>
+        {/* Schema.org JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "SportsActivityLocation",
+              "name": "Action Rent",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Санкт-Петербург",
+                "streetAddress": "проспект Энгельса, 126к1",
+              },
+              "telephone": "+7 (950) 222-65-90",
+              "url": "https://action-rent.ru",
+            }),
+          }}
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }

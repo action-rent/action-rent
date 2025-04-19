@@ -1,6 +1,6 @@
 "use client";
+
 import { useState, useEffect } from "react";
-import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
@@ -57,43 +57,11 @@ export default function PriceCategory() {
 
   return (
     <div className="landing-container">
-      <Head>
-        <title>Цены на прокат снаряжения | SUP-доски, палатки и другое — Action Rent СПб</title>
-        <meta
-          name="description"
-          content="Узнайте актуальные цены на прокат туристического снаряжения, SUP-досок, палаток и других товаров. Удобные условия аренды в СПб."
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: `
-              {
-                "@context": "https://schema.org",
-                "@type": "Store",
-                "name": "Action Rent",
-                "image": "https://action-rent.ru/logo.png",
-                "description": "Прокат SUP-досок, палаток и туристического снаряжения в Санкт-Петербурге",
-                "address": {
-                  "@type": "PostalAddress",
-                  "addressLocality": "Санкт-Петербург",
-                  "streetAddress": "проспект Энгельса, 126к1"
-                },
-                "openingHours": "Mo-Su 09:00-21:00",
-                "telephone": "+7 (950) 222-65-90",
-                "url": "https://action-rent.ru/price"
-              }
-            `,
-          }}
-        />
-      </Head>
-
       <div className="landing-background" />
-
       <div className="landing-content">
         <Header />
 
         <main className="category-section">
-          {/* SEO H1 */}
           <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
             Цены на прокат туристического снаряжения и SUP-досок в Санкт-Петербурге
           </h1>
@@ -109,7 +77,6 @@ export default function PriceCategory() {
 
         <Footer />
 
-        {/* Модальное окно */}
         {isModalOpen && selectedCategory && (
           <div className="modal-overlay">
             <div className="modal-content">
