@@ -65,17 +65,17 @@ export default function Promo() {
             {/* Акция 1 */}
             <div className="promo-card">
               <div className="promo-image" >
-                <img
-                  src={firstPromo.src}
+                <Image
+                  src={firstPromo}
                   alt="Скидка 10% при аренде SUP-досок для группы, корпоратив на сапбордах"
-                  layout="responsive"
+                  height={200}
                   placeholder="blur"
-                  className='promo'
+                  className="promo"
                 />
               </div>
               <div className="promo-details">
                 <h3 className="promo-heading">Скидка для группы</h3>
-                <p className="promo-description">Cкидка 10% на общую сумму аренды инвентаря.<br/></p>
+                <p className="promo-description">Cкидка 10% на общую сумму аренды инвентаря.<br /></p>
                 <p className="promo-terms">
                   Условия: Скидка действует при аренде от 3 дней и от 3 единиц инвентаря.
                   <br /> Предложение не суммируется с другими акциями.
@@ -86,10 +86,10 @@ export default function Promo() {
             {/* Акция 2 */}
             <div className="promo-card">
               <div className="promo-image">
-                <img
-                  src={secondPromo.src}
+              <Image
+                  src={secondPromo}
                   alt="Скидка выходного дня на аренду инвентаря, доставка для корпоративов"
-                  layout="responsive"
+                  height={200}
                   placeholder="blur"
                   className='promo'
                 />
@@ -100,7 +100,7 @@ export default function Promo() {
                   Скидка 5% на аренду инвентаря на выходные (пятница - воскресенье).
                 </p>
                 <p className="promo-terms">
-                  Условия: Скидка действует только при аренде пятницы по воскресенье.
+                  Условия: Скидка действует только при аренде с пятницы по воскресенье.
                   <br /> Предложение не суммируется с другими акциями.
                 </p>
               </div>
@@ -109,10 +109,10 @@ export default function Promo() {
             {/* Акция 3 */}
             <div className="promo-card">
               <div className="promo-image">
-                <img
-                  src={lastPromo.src}
+              <Image
+                  src={lastPromo}
                   alt="Скидка ко дню рождения на аренду SUP-досок, день рождение компании"
-                  layout="responsive"
+                  height={200}
                   placeholder="blur"
                   className='promo'
                 />

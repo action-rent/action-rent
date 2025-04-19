@@ -7,17 +7,13 @@ const ProductCard = ({ product, days, weekend, onDaysChange, onToggleWeekend }) 
 
   return (
     <div className="product-card">
-      {typeof product.image === "string" && product.image.startsWith("/") ? (
-        <Image
-          src={product.image}
-          alt={product.name}
-          width={300}
-          height={200}
-          className="product-image"
-        />
-      ) : (
-        <img src={product.image.src} alt={product.name} className="product-image" />
-      )}
+      <Image
+        src={typeof product.image === "string" ? product.image : product.image.src}
+        alt={product.name}
+        width={300}
+        height={200}
+        className="product-image"
+      />
 
       <h3 className="product-name">{product.name}</h3>
       <p className="product-second-name">{product.secondName}</p>
