@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Host: https://action-rent.ru
+Sitemap: https://action-rent.ru/sitemap.xml

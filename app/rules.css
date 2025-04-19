@@ -1,0 +1,57 @@
+.rules-main {
+  padding: 20px 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #f0f0f5;
+  position: relative;
+  z-index: 2;
+}
+
+.rules-main h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rules-scrollbox {
+  max-height: 450px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scrollbar-color: #666 #222;
+}
+
+.rules-scrollbox::-webkit-scrollbar {
+  width: 8px;
+}
+
+.rules-scrollbox::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 8px;
+}
+
+.rule-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #1f1f2f;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.rule-icon {
+  color: #58a6ff;
+  flex-shrink: 0;
+  font-size: 24px;
+  /* margin-top: 4px; */
+}
+
+@media (max-width: 768px) {
+  .rules-main {
+    padding: 20px 0px 0px 0px;
+  }
+  .rules-scrollbox {
+    max-height:unset;
+  }
+}
