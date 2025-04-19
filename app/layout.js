@@ -1,7 +1,6 @@
 export const metadata = {
   title: "Action Rent",
   description: "Аренда сапбордов, палаток и туристического инвентаря спб",
-  // themeColor: "#000000", // для мобильной строки состояния
 };
 
 export default function RootLayout({ children }) {

@@ -1,4 +1,3 @@
-// pages/index.jsx
 import Head from "next/head";
 import { FaTelegram } from "react-icons/fa";
 import Header from "./components/Header";
