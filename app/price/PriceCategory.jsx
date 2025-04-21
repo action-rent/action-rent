@@ -63,7 +63,7 @@ export default function PriceCategory() {
 
         <main className="category-section">
           <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
-            Цены на прокат туристического снаряжения и SUP-досок в Санкт-Петербурге
+            Цены на прокат туристического снаряжения и сапбордов в Санкт-Петербурге
           </h1>
 
           {categories.map(category => (
