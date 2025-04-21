@@ -31,6 +31,7 @@ export default function RootLayout({ children }) {
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="theme-color" content="#000000" />
+        <link rel="icon" href="/favicon.ico" />
 
         {/* Schema.org JSON-LD */}
         <script
