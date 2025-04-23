@@ -393,8 +393,8 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100svw;
-    height: 100svh;
+    width: 100%;
+    height: 100%;
     background-position: center top; /* чтобы центрировалось красиво */
   }
 
