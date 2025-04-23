@@ -379,6 +379,8 @@ body::before {
   }
 
   body::before{
+    content: "";
+    position: fixed;
     width: 100vw; 
     height: 100vh; 
     background-repeat: no-repeat;
