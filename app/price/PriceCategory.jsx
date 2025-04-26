@@ -45,14 +45,31 @@ export default function PriceCategory() {
   };
 
   useEffect(() => {
+    // if (isModalOpen) {
+    //   document.body.classList.add("modal-open");
+    // } else {
+    //   document.body.classList.remove("modal-open");
+    // }
+    // return () => {
+    //   document.body.classList.remove("modal-open");
+    // };
     if (isModalOpen) {
-      document.body.classList.add("modal-open");
-    } else {
-      document.body.classList.remove("modal-open");
+      const scrollY = window.scrollY;
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.overflow = 'hidden';
+
+      return () => {
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        document.body.style.overflow = '';
+        window.scrollTo(0, scrollY); // возвращаем на место
+      };
     }
-    return () => {
-      document.body.classList.remove("modal-open");
-    };
   }, [isModalOpen]);
 
   return (
