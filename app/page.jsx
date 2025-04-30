@@ -2,6 +2,9 @@ export const metadata = {
   title: "Аренда сапбордов и палаток в СПб | Аренда снаряжения — Action Rent",
   description:
     "Прокат сапов, палаток и туристического снаряжения в Санкт-Петербурге. Прокат SUP-досок и палаток. Все для активного отдыха — арендуй легко с Action Rent.",
+    alternates: {
+      canonical: "https://action-rent.ru/",
+    },
 };
 
 import { FaTelegram } from "react-icons/fa";
@@ -20,7 +23,7 @@ export default function Home() {
           <div className="landing-text-section">
             {/* Скрытый H1 для SEO */}
             <h1 style={{ position: "absolute", left: "-9999px", top: "-9999px" }}>
-              Прокат сапбордов, аренда палаток и снаряжения в Санкт-Петербурге.
+              Прокат сапбордов, аренда палаток и туристического снаряжения в Санкт-Петербурге.
             </h1>
 
             <h2 className="landing-number">78</h2>

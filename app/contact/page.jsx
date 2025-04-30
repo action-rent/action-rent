@@ -2,6 +2,9 @@ export const metadata = {
   title: "Контакты | Прокат сапбордов, палаток и снаряжения — Action Rent СПб",
   description:
     "Контакты проката Action Rent в Санкт-Петербурге. Адрес, телефон, мессенджеры и карта проезда. Аренда сапбордов, шатров, палаток, спальных мешков и прочего туристического инвентаря в СПб.",
+    alternates: {
+      canonical: "https://action-rent.ru/contact",
+    },
 };
 
 import { FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";

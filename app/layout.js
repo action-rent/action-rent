@@ -5,9 +5,6 @@ export const metadata = {
   description:
     "Аренда и прокат сапбордов, палаток и туристического снаряжения в Санкт-Петербурге (СПб). У нас — аренда сапов, палаток, шатров и прочего снаряжения. Прокат туристического инвентаря в СПб для отдыха и путешествий по доступным ценам.",
   metadataBase: new URL("https://action-rent.ru"),
-  alternates: {
-    canonical: "/",
-  },
   openGraph: {
     title: "Action Rent | Аренда сапборда и палатки в СПб",
     description:

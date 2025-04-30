@@ -2,6 +2,9 @@ export const metadata = {
   title: "Правила аренды снаряжения и сапбордов в СПб | Action Rent",
   description:
     "Условия аренды SUP-досок, палаток и туристического снаряжения в Санкт-Петербурге. Что нужно для проката: документы, залог, сроки возврата, правила пользования.",
+    alternates: {
+      canonical: "https://action-rent.ru/rules",
+    },
 };
 
 import "../App.css";

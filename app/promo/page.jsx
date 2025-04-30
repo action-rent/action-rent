@@ -2,6 +2,9 @@ export const metadata = {
   title: "Скидки и акции на аренду сапбордов и снаряжения в СПб | Action Rent",
   description:
     "Актуальные акции и скидки на прокат SUP-досок, палаток и туристического снаряжения в Санкт-Петербурге. Выгодная аренда инвентаря — только в Action Rent.",
+    alternates: {
+      canonical: "https://action-rent.ru/promo",
+    },
 };
 
 import Image from "next/image";
