@@ -3,7 +3,7 @@ export const metadata = {
   description:
     "Прокат сапов, палаток и туристического снаряжения в Санкт-Петербурге. Прокат SUP-досок и палаток. Все для активного отдыха — арендуй легко с Action Rent.",
     alternates: {
-      canonical: "https://action-rent.ru/",
+      canonical: "https://action-rent.ru",
     },
 };
 
