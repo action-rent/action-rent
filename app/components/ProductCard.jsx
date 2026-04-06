@@ -1,3 +1,4 @@
+"use client"; // Должно быть самой первой строкой в файле
 import { FaPhone, FaTelegram, FaWhatsapp } from "react-icons/fa";
 import Image from "next/image";
 

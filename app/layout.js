@@ -1,4 +1,6 @@
+
 import Script from "next/script";
+import "./App.css"
 
 export const metadata = {
   title: "Аренда сапбордов и палаток в СПб | Прокат туристического снаряжения — Action Rent",

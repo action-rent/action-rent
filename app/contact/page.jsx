@@ -1,3 +1,4 @@
+
 export const metadata = {
   title: "Контакты | Прокат сапбордов, палаток и снаряжения — Action Rent СПб",
   description:

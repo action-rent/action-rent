@@ -1,3 +1,4 @@
+
 export const metadata = {
   title: "Скидки и акции на аренду сапбордов и снаряжения в СПб | Action Rent",
   description:

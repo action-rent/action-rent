@@ -1,3 +1,5 @@
+
+import "./App.css";
 export const metadata = {
   title: "Аренда сапбордов и палаток в СПб | Аренда снаряжения — Action Rent",
   description:
@@ -11,7 +13,6 @@ import { FaTelegram } from "react-icons/fa";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Link from "next/link";
-import "./App.css";
 
 export default function Home() {
   return (
