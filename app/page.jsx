@@ -35,7 +35,7 @@ export default function Home() {
             </p>
             <div className="landing-buttons">
               <Link href="/price">
-                <button className="btn primary">Прайс</button>
+                <button className="btn primary">Цены</button>
               </Link>
               <a className="btn secondary" href="https://t.me/actionrent78" target="_blank" rel="noopener noreferrer">
                 <span>Написать</span> <FaTelegram />

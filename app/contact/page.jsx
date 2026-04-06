@@ -7,7 +7,7 @@ export const metadata = {
     },
 };
 
-import { FaInstagram, FaTelegram, FaWhatsapp } from "react-icons/fa";
+import { FaTelegram, FaWhatsapp } from "react-icons/fa";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../App.css";
@@ -110,7 +110,6 @@ export default function Contact() {
                   <a href="https://t.me/actionrent78" target="_blank" rel="noopener noreferrer">
                     <FaTelegram size={40} />
                   </a>
-                  <FaInstagram size={40} />
                   <a href="https://wa.me/79502226590" target="_blank" rel="noopener noreferrer">
                     <FaWhatsapp size={40} />
                   </a>

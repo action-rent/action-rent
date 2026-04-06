@@ -89,7 +89,7 @@ export default function Rules() {
             <div className="rule-block">
               <FaUndo className="rule-icon" />
               <p>
-                <strong>Отказ:</strong> деньги за неиспользованные дни не возвращаются.
+                <strong>Отказ:</strong> деньги за неиспользованные дни возвращаются.
               </p>
             </div>
 

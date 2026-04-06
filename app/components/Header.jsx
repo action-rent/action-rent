@@ -11,7 +11,7 @@ const Header = () => {
       <nav className="landing-nav">
         <ul className="landing-nav-links">
           <li><a href="/">Главная</a></li>
-          <li><a href="/price">Прайс</a></li>
+          <li><a href="/price">Цены</a></li>
           <li><a href="/promo">Акции</a></li>
           <li><a href="/rules">Правила проката</a></li>
           <li><a href="/contact">Контакты</a></li>
